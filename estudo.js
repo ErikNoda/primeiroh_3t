@@ -4,7 +4,7 @@
 
 var tabuada = 8;
 
-function mechama (ezequiel){
+function meChame(nome){
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
     document.write(tabuada + " x 1 = "+(tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = "+(tabuada*2)+"<br>");
@@ -16,31 +16,48 @@ function mechama (ezequiel){
     document.write(tabuada + " x 8 = "+(tabuada*8)+"<br>");
     document.write(tabuada + " x 9 = "+(tabuada*9)+"<br>");
     document.write(tabuada + " x 10 = "+(tabuada*10)+"<br");
-    document.write("Feita por " + ezequiel);
+    document.write("Feita por " + nome);
     
 }
 
+function escreva(){
+    for(var i = 1; i < 11; i++){
+        document.write(tabuada + " x " + i + " = "+(tabuada*i)+"<br>");
+    }
+}
 
-function escreva () {
-     for(var i = 1; i < 10; i++){ 
-          document.write(tabuada + " x " + i + " = " +(tabuada*i)+"<br");
-     }
+function quadrado(){
+    for(var i = 2; i < 101; i++){
+        document.write("O Quadrado de " + i + " é " + (i*i)+ "<br>")
+    }
+}
+function total(){
+    let valor = document.getElementById("val").value;
+    let juros = document.getElementById("ju").value;
+    let mes = document.getElementById("mes").value;
+    let resultado = 0;
+    for(let i = 1; i <= mes; i++){
+        resultado = valor * (1+(juros/100));
+        valor = resultado;
+    }
     
-    }
+    document.write("O Resultado é " + resultado);
+}
 
-    function quadrado (){
-        for(var i = 2; i < 21; i++){
-            document.write('o quadrado de'+ i + " é " + (i*i)+ "<br>")
-        }
-    }
+function soma(){
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    let n3 = document.getElementById("n3").value;
+    let r = Number(n1) + Number (n2) + Number (n3)
+    document.getElementById("resultado").innerHTML = r;
+    
+}
 
-    function total(){
-        let valor = document.getElementById("val").value;
-        let juros = document.getElementById("ju").value;
-        let mes = document.getElementById("mes").value;
-        let resultado = 0;
-        for(let i = 1; 1<= mes; i++){
-            resultado += valor * (1+juros/100);
-        }
-        document.write("O Resultado é " + resultado);
-    }
+function Media(){
+    let m1 = document.getElementById("m1").value;
+    let m2 = document.getElementById("m2").value;
+    let m3 = document.getElementById("m3").value;
+    let r = Number(m1) + Number (m2) + Number (m3)
+    document.getElementById("resultado").innerHTML = r;
+    
+}

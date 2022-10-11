@@ -54,10 +54,10 @@ function soma(){
 }
 
 function Media(){
-    let m1 = document.getElementById("m1").value;
-    let m2 = document.getElementById("m2").value;
-    let m3 = document.getElementById("m3").value;
-    let r = Number(m1) + Number (m2) + Number (m3)
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    let n3 = document.getElementById("n3").value;
+    let r = Number(n1) + Number (n2) + Number (n3)/3
     document.getElementById("resultado").innerHTML = r;
     
 }

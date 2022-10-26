@@ -31,7 +31,7 @@ function escreva() {
 
 }
 function moeda(atual){
-    return
+    return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
 }
 

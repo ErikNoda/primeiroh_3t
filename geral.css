@@ -1,16 +1,41 @@
-.caulculadora {
+.calculadora {
     padding: 10px;
-    background: blueviolet;
+    background: rgb(0, 0, 0);
     width: 200px;
+    border-radius: 20px;
 }
-.nota{
+.listaMensal{
     padding: 10px;
-    background: blueviolet;
+    background: rgb(0, 47, 255);
     width: 200px;
+    border-radius: 20px;
 }
- #btncalc {
-     width: 20px;
-     padding: 10px;
-     background: brown;
- }
+.calculadora input {
+    background: black;
+    color: blue;
+   border-radius: 15px;
+   height: 25px;
+}
+ 
+.spResul {
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
 
+}
+
+#btnCalc {
+    width: 60px;
+    padding: 5px;
+    background: rgb(47, 0, 255);
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#btnCalc:hover {
+    background:red;
+    color:blue;
+    cursor: help;
+}
